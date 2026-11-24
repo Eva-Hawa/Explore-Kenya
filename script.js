@@ -168,7 +168,7 @@ destinationSearch.addEventListener("input", filterDestinations);
 
 
 //Update results when someone chnages the category
-categoryFilter.addEventListener("change", filterDestinations);
+categoryFilter.addEventListener("change", filterDestinations); 
 
 
 // 6. Add or remove favourites
