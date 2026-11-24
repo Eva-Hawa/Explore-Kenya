@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Kenya | Discover Magic </title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&
+    family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!--CSS File-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar-->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Explore<span>Kenya.</span></a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="about">About Kenya</a></li>
+            </ul>
+
+            <a href="plan" class="nav-button">Plan Your Trip</a>
+
+            <button class="menu-toggle" id="menuToggle"
+               aria-label="Open navigation menu"
+               aria-expanded="false">
+               ≡
+           </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section-->
+     <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">YOUR NEXT ADVENTURE STARTS HERE</p>
+
+                <h1>Discover the wild beauty of <span>Kenya.</span></h1>
+
+                <p class="hero-description">
+                    From golden savannahs to turquoise oceans,
+                    discover a land full of wonder, culture and adventure.
+                </p>
+
+                <a href="#destinations" class="primary-button">
+                    Explore Destinations →
+                </a>
+
+                <div class="hero-note">
+                    <span>✦</span> Magical Places. Unforgattable memories.
+                </div>
+            </div>
+        </section>
+
+        <!--Destinations Section-->
+        <section class="destinations section-padding" id="destinations">
+            <div class="section-heading">
+                <p class="eyebrow">WHERE WILL YOU GO?</p>
+                <h2>Places that take your breath away.</h2>
+                <p>Find your next favourite corner of Kenya.</p>
+            </div>
+
+        <!--Search and Filter-->
+        <div class="destination-controls">
+            <input 
+                type="search"
+                id="destinationSearch"
+                placeholder="Search destinations..."
+                aria-label="Search destinations">
+            
+            <select  id="categoryFilter" aria-label="Filter by category">
+                <option value="all">All destinations</option>
+                <option value="wildlife">Wildlife & Safari</option>
+                <option value="beach">Beaches</option>
+                <option value="nature">Nature & Adventure</option>
+            </select>
+        </div>
+
+        <!--Javascript will display destination card here-->
+
+        <div class="destination-grid" id="destinationGrid"></div>
+
+        <p class="no-results" id="noResults" hidden>
+            No destinations found. Try another search.
+        </p>
+        </section>
+
+        <!--About Kenya Section-->
+        <section class="about section-padding" id="about">
+            <div class="about-content">
+                <p class="eyebrow">MORE THAN A DESTINATION</p>
+                <h2>Karibu Kenya.</h2>
+                <p>
+                    Kenya is a place of extraordinary contrasts.
+                    Experience breathtaking landscapes, vibrant cultures,
+                    rich traditions and the warmth of its people.
+                </p>
+                <p>
+                    Whether you're seeking adventure, relaxation or a 
+                    deeper connection with nature, your journey begins here.
+                </p>
+            </div>
+
+            <div class="about-highlight">
+                <span class="highlight-icon">✦</span>
+                <h3>One country.</h3>
+                <h3>Endless discoveries.</h3>
+                <p>Come for the views. Stay for the experience.</p>
+            </div>
+        </section>
+
+        <!--Trip Planning Section-->
+        <section class="plan section-padding" id="plan">
+            <div class="section-heading">
+                <p class="eyebrow">LET'S MAKE IT HAPPEN</p>
+                <h2>Your Kenyan adventure awaits</h2>
+                <p>Tell us what kind of gateway you're dreaming of.</p>
+            </div>
+
+            <form id="tripForm">
+                <label for="travellerName">Your name</label>
+                <input 
+                type="text"
+                id="travellerName"
+                placeholder="Enter your name"
+                required>
+
+                <label for="tripDestination">Where would you like to go?</label>
+                <select id="tripDestination" required>
+                    <option value="">Choose a destination</option>
+                    <option value="Maasai Mara">Maasai Mara</option>
+                    <option value="Diani Beach">Diani Beach</option>
+                    <option value="Lake Naivasha">Lake Naivasha</option>
+                    <option value="Amboseli">Amboseli</option>
+                    <option value="Mount Kenya">Mount Kenya</option>
+                    <option value="Nairobi">Nairobi</option>
+                </select>
+
+                <label for="travelStyle">Your travel style</label>
+                <select id="travelStyle" required>
+                    <option value="">Choose your adventure</option>
+                    <option value="Wildlife safari">Wildlife safari</option>
+                    <option value="Beach escape">Beach escape</option>
+                    <option value="Nature and hiking">Nature and hiking</option>
+                    <option value="Culture and heritage">Culture and heritage</option>
+                </select>
+
+                <button type="submit" class="primary-button">
+                    Create My Trip Idea →
+                </button>
+                <p id="formMessage" role="status"></p>
+            </form>
+        </section>
+     </main>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="logo">Explore<span>Kenya.</span></a>
+        <p>Discover more. Travel deeper. Love Kenya.</p>
+        <p class="copyright">@ 2026 Explore Kenya. Made with ❤ in Kenya.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
