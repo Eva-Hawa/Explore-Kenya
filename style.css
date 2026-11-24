@@ -5,7 +5,7 @@
     --forest: #173f35;
     --deep-forest: #102e27;
     --sage: #dce6d8;
-    --cream: #faf7f0;
+    --cream: #79eb48;
     --sand: #e8d9bf;
     --orange: #d77b45;
     --text:#29352f;
@@ -607,7 +607,4 @@ header {
         animation-duration: 0.01ms !important;
         transition-duration: 0.01ms !important;
     }
-}
-.hawa{
-    back
 }
