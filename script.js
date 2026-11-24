@@ -162,7 +162,7 @@ function filterDestinations() {
     displayDestinations(filteredDestinations);
 }
 
-red/ yellow
+
 // Update results when someone searches
 destinationSearch.addEventListener("input", filterDestinations);
 
